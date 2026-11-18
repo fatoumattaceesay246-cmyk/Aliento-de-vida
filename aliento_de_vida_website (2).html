@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ALIENTO DE VIDA — satin-lined beanies in black, cream, navy blue and grey. Collection in Leeds on 5 December 2026.">
+  <meta name="theme-color" content="#11100f">
+  <title>ALIENTO DE VIDA | Beanie Collection</title>
+  <style>
+    :root{--ink:#171513;--cream:#f4efe5;--gold:#c6a66b;--muted:#b8b0a3;--panel:#211e1a}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--ink);color:var(--cream);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+    a{color:inherit}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{padding:22px 0;border-bottom:1px solid #ffffff20;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-family:Georgia,serif;letter-spacing:2px;font-size:19px;font-weight:bold}
+    nav{display:flex;gap:20px;flex-wrap:wrap;font-size:13px}
+    nav a{text-decoration:none;color:var(--muted)}
+    nav a:hover{color:var(--gold)}
+    .hero{padding:76px 0 64px;display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
+    .eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:11px;font-weight:bold}
+    h1{font:clamp(42px,7vw,76px)/1.03 Georgia,serif;margin:16px 0}
+    .hero p{max-width:520px;color:#d1c9bc;font-size:17px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .btn{display:inline-block;padding:13px 21px;border-radius:3px;background:var(--gold);color:#171513;text-decoration:none;font-weight:bold;border:1px solid var(--gold);cursor:pointer}
+    .btn.secondary{background:transparent;color:var(--cream);border-color:#ffffff55}
+    .hero-art{min-height:340px;background:radial-gradient(circle at 50% 35%,#514333 0,#29231c 42%,#1b1916 72%);border:1px solid #ffffff20;border-radius:8px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+    .hero-art:after{content:"SATIN LINED • WINTER COLLECTION";position:absolute;bottom:20px;letter-spacing:2px;font-size:10px;color:#d6c6a6}
+    .beanie{width:205px;height:190px;position:relative;border-radius:105px 105px 35px 35px;background:linear-gradient(90deg,#111 0,#353535 28%,#161616 70%,#080808 100%);box-shadow:inset 12px 0 18px #ffffff15,0 25px 45px #0009;transform:rotate(-5deg)}
+    .beanie:before{content:"";position:absolute;left:0;right:0;bottom:0;height:48px;border-radius:0 0 25px 25px;background:repeating-linear-gradient(90deg,#171717 0 7px,#292929 7px 11px);border-top:2px solid #ffffff22}
+    .beanie:after{content:"AV";position:absolute;top:78px;left:0;right:0;text-align:center;color:#e9dfcb;font: bold 27px Georgia,serif;letter-spacing:2px}
+    section{padding:58px 0;border-top:1px solid #ffffff18}
+    h2{font:36px Georgia,serif;margin:0 0 12px}
+    .sub{color:var(--muted);margin:0 0 28px}
+    .colours{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .colour-card{background:var(--panel);padding:14px;border:1px solid #ffffff18;border-radius:6px}
+    .swatch{height:130px;border-radius:4px;margin-bottom:12px;position:relative;overflow:hidden}
+    .swatch:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,#ffffff08 0 3px,transparent 3px 8px)}
+    .black{background:linear-gradient(135deg,#090909,#343434)}
+    .cream{background:linear-gradient(135deg,#e7ddc9,#b9aa91)}
+    .navy{background:linear-gradient(135deg,#071a35,#18375d)}
+    .grey{background:linear-gradient(135deg,#777a7c,#b9b9b7)}
+    .colour-card strong{font-size:15px}
+    .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .price{background:var(--panel);padding:24px;border:1px solid #ffffff20;border-radius:6px}
+    .price.featured{border-color:var(--gold)}
+    .price .amount{font:40px Georgia,serif;color:var(--gold);margin:8px 0}
+    .price p{color:var(--muted);margin:0}
+    .order{background:var(--cream);color:#211e1a;border-radius:8px;padding:28px;max-width:720px}
+    .order h2{color:#211e1a}
+    label{display:block;font-weight:bold;margin:16px 0 6px}
+    select,input{width:100%;padding:12px;border:1px solid #c8c0b4;border-radius:4px;background:white;color:#211e1a;font-size:15px}
+    .checks{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+    .checks label{font-weight:normal;margin:0;background:white;padding:10px;border:1px solid #d5cec3;border-radius:4px}
+    .checks input{width:auto;margin-right:7px}
+    .total{font:30px Georgia,serif;margin:18px 0 6px}
+    .notice{font-size:13px;color:#5e574d}
+    .pay{width:100%;margin-top:16px;font-size:15px}
+    .collection{background:#201d19;padding:24px;border-left:3px solid var(--gold);max-width:650px}
+    footer{padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid #ffffff20}
+    footer a{color:var(--gold);text-decoration:none}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:48px 0}.hero-art{min-height:260px}.colours{grid-template-columns:repeat(2,1fr)}.price-grid{grid-template-columns:1fr}header{align-items:flex-start;flex-direction:column}nav{gap:13px}}
+  </style>
+</head>
+<body>
+<header class="wrap">
+  <div class="brand">ALIENTO DE VIDA</div>
+  <nav><a href="#collection">COLOURS</a><a href="#prices">PRICES</a><a href="#order">ORDER</a><a href="https://www.tiktok.com/@alientodevidauk" target="_blank" rel="noopener">TIKTOK ↗</a></nav>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow">The winter collection</div>
+      <h1>Warmth, comfort<br>and confidence.</h1>
+      <p>Meet the ALIENTO DE VIDA beanie collection. Choose your colour, mix and match your favourites, and place an order for our collection day in Leeds.</p>
+      <div class="actions"><a class="btn" href="#order">SHOP THE COLLECTION</a><a class="btn secondary" href="https://www.tiktok.com/@alientodevidauk" target="_blank" rel="noopener">FOLLOW OUR TIKTOK</a></div>
+    </div>
+    <div class="hero-art" role="img" aria-label="Illustration of a black ribbed beanie"></div>
+  </div>
+
+  <section id="collection">
+    <div class="wrap">
+      <div class="eyebrow">Find your colour</div><h2>The beanie collection</h2>
+      <p class="sub">Four easy-to-style colours. Mix and match when you order.</p>
+      <div class="colours">
+        <div class="colour-card"><div class="swatch black"></div><strong>Black</strong></div>
+        <div class="colour-card"><div class="swatch cream"></div><strong>Cream</strong></div>
+        <div class="colour-card"><div class="swatch navy"></div><strong>Navy blue</strong></div>
+        <div class="colour-card"><div class="swatch grey"></div><strong>Grey</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices">
+    <div class="wrap">
+      <div class="eyebrow">Simple prices</div><h2>Pick your bundle</h2>
+      <p class="sub">Choose one, two or three beanies. You can mix and match colours.</p>
+      <div class="price-grid">
+        <div class="price"><div>ONE BEANIE</div><div class="amount">£8</div><p>Choose any one colour.</p></div>
+        <div class="price featured"><div>TWO BEANIES</div><div class="amount">£12</div><p>Mix and match two colours.</p></div>
+        <div class="price"><div>THREE BEANIES</div><div class="amount">£20</div><p>Mix and match three colours.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="order">
+    <div class="wrap">
+      <div class="eyebrow">Reserve your beanies</div><h2>Place an order</h2>
+      <p class="sub">Collection only — no delivery is currently offered.</p>
+      <div class="order">
+        <h2>Choose your order</h2>
+        <label for="quantity">How many beanies?</label>
+        <select id="quantity">
+          <option value="1">1 beanie — £8</option>
+          <option value="2">2 beanies — £12</option>
+          <option value="3">3 beanies — £20</option>
+        </select>
+        <label>Choose your colours</label>
+        <div class="checks" id="colourChoices">
+          <label><input type="checkbox" value="Black" checked> Black</label>
+          <label><input type="checkbox" value="Cream"> Cream</label>
+          <label><input type="checkbox" value="Navy blue"> Navy blue</label>
+          <label><input type="checkbox" value="Grey"> Grey</label>
+        </div>
+        <div class="total" id="total">Total: £8</div>
+        <p class="notice" id="selectionNote">Select exactly 1 colour.</p>
+        <button class="btn pay" id="payButton" type="button">SUMUP ONLINE PAYMENT — COMING SOON</button>
+        <p class="notice">Online payment is not active yet. The SumUp account holder must provide the correct payment link(s) before this button can take payments. Do not send money until the checkout is connected and tested.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="collection-day">
+    <div class="wrap">
+      <div class="eyebrow">Collection information</div><h2>See you in Leeds</h2>
+      <div class="collection">
+        <p><strong>Collection date:</strong> Saturday 5 December 2026</p>
+        <p><strong>Collection point:</strong> Merrion Centre, Leeds</p>
+        <p><strong>Order type:</strong> Collection only — no delivery.</p>
+        <p class="notice">Please only travel to collect once your order and collection arrangements have been confirmed by ALIENTO DE VIDA.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>ALIENTO DE VIDA</strong><br>
+    Follow us on <a href="https://www.tiktok.com/@alientodevidauk" target="_blank" rel="noopener">@alientodevidauk on TikTok</a>.<br><br>
+    © 2026 ALIENTO DE VIDA. All rights reserved.
+  </div>
+</footer>
+<script>
+  const quantity = document.getElementById('quantity');
+  const checks = [...document.querySelectorAll('#colourChoices input')];
+  const total = document.getElementById('total');
+  const note = document.getElementById('selectionNote');
+  const payButton = document.getElementById('payButton');
+  function updateOrder(){
+    const count = Number(quantity.value);
+    const chosen = checks.filter(c=>c.checked);
+    const price = {1:8,2:12,3:20}[count];
+    total.textContent = `Total: £${price}`;
+    note.textContent = chosen.length === count
+      ? `Selected: ${chosen.map(c=>c.value).join(', ')}. Your total is £${price}.`
+      : `Please select exactly ${count} colour${count===1?'':'s'} (${chosen.length} selected).`;
+    payButton.textContent = chosen.length === count ? `SUMUP PAYMENT — £${price} (NOT CONNECTED YET)` : 'SELECT YOUR COLOURS';
+    payButton.disabled = true;
+    payButton.style.opacity = chosen.length === count ? '1' : '.55';
+  }
+  quantity.addEventListener('change',()=>{
+    checks.forEach((c,i)=>c.checked = i===0);
+    updateOrder();
+  });
+  checks.forEach(c=>c.addEventListener('change',()=>{
+    const max = Number(quantity.value);
+    const chosen = checks.filter(x=>x.checked);
+    if(chosen.length>max)c.checked=false;
+    updateOrder();
+  }));
+  payButton.addEventListener('click',()=>alert('Online payment is not connected yet. The SumUp account holder must add the official SumUp payment link before customers can pay.'));
+  updateOrder();
+</script>
+</body>
+</html>
