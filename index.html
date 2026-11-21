@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Shop ALIENTO DE VIDA satin-lined ribbed knitted beanies in black, cream, navy blue and grey. Collection in Leeds on 5 December 2026.">
+<meta name="description" content="Shop ALIENTO DE VIDA satin-lined ribbed knitted beanies in black, cream, navy blue and grey. Collection options at Merrion Centre, Leeds or Elliott Hudson College.">
 <title>ALIENTO DE VIDA | Satin-Lined Beanies</title>
 <style>
 :root{--ink:#151515;--cream:#f5f1e9;--gold:#c6b38e;--muted:#77736b}
@@ -41,7 +41,7 @@ footer{background:#080808;color:#aaa;text-align:center;padding:28px 15px;font-si
 @media(max-width:900px){.colour-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:560px){.colour-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style></head><body>
-<div class="announcement">THE FIRST BEANIE DROP · COLLECTION ONLY · 5 DECEMBER 2026</div>
+<div class="announcement">THE FIRST BEANIE DROP · TWO COLLECTION OPTIONS AVAILABLE</div>
 <header><a class="brand" href="#home">ALIENTO DE VIDA</a><nav><a href="#shop">SHOP</a><a href="#offers">PRICES</a><a href="#about">OUR BRAND</a><a href="#order">ORDER</a><a href="#contact">TIKTOK</a></nav></header>
 <main>
 <section class="hero" id="home"><div><div class="eyebrow">EVERYDAY COMFORT. EFFORTLESS STYLE.</div><h1>YOUR EVERYDAY BEANIE, WITH A SOFTER FINISH.</h1><p>Discover the ALIENTO DE VIDA ribbed knitted beanie, with a smooth satin lining inside. A classic look, four easy-to-style colours and simple prices.</p><a class="btn" href="#shop">EXPLORE THE COLLECTION</a></div>
@@ -59,51 +59,53 @@ footer{background:#080808;color:#aaa;text-align:center;padding:28px 15px;font-si
 </div>
 </section>
 <section id="offers"><div class="heading"><div class="eyebrow">MIX & MATCH</div><h2>MORE COLOURS. BETTER VALUE.</h2><p>Choose different colours for your multi-beanie offer.</p></div><div class="offers"><div class="offer"><span>ONE BEANIE</span><strong>£8</strong><p>Choose one colour</p></div><div class="offer"><span>TWO BEANIES</span><strong>£12</strong><p>Mix and match colours</p></div><div class="offer"><span>THREE BEANIES</span><strong>£20</strong><p>Mix and match colours</p></div></div></section>
-<section class="order" id="order"><div class="heading"><div class="eyebrow">THE FIRST DROP</div><h2>RESERVE YOUR BEANIES</h2><p>Choose your bundle and colours. Collection only in Leeds on Saturday 5 December 2026.</p></div>
+<section class="order" id="order"><div class="heading"><div class="eyebrow">THE FIRST DROP</div><h2>RESERVE YOUR BEANIES</h2><p>Choose your bundle, colours and preferred collection point.</p></div>
 <div class="formbox"><div class="notice"><strong>ELLIOTT HUDSON COLLEGE COLLECTION</strong><br>Teachers and pupils can collect their ALIENTO DE VIDA orders on Wednesdays<br>Room 1.32 · 2:20 pm–3:10 pm</div><div class="notice"><strong>COLLECTION ONLY</strong><br>Saturday 5 December 2026 · Merrion Centre, Leeds<br>Exact collection time and meeting instructions will be sent after your order is confirmed. No delivery is available.</div>
 <div class="fields"><div><label for="customer">YOUR NAME</label><input id="customer" autocomplete="name" placeholder="Your name" required></div><div><label for="contactdetails">EMAIL OR PHONE NUMBER</label><input id="contactdetails" autocomplete="email" placeholder="How we can contact you" required></div></div>
-<div class="fields"><div><label for="qty">CHOOSE YOUR OFFER</label><select id="qty"><option value="1">1 beanie — £8</option><option value="2">2 beanies — £12</option><option value="3">3 beanies — £20</option></select></div><div><label>COLLECTION</label><input value="5 December 2026 · Merrion Centre, Leeds" readonly></div></div>
+<div class="fields"><div><label for="qty">CHOOSE YOUR OFFER</label><select id="qty"><option value="1">1 beanie — £8</option><option value="2">2 beanies — £12</option><option value="3">3 beanies — £20</option></select></div><div><label for="collection">CHOOSE COLLECTION</label><select id="collection"><option value="merrion">Merrion Centre, Leeds — Saturday 5 December 2026</option><option value="college">Elliott Hudson College — Wednesday, Room 1.32, 2:20 pm–3:10 pm</option></select></div></div>
 <div class="fields"><div><label for="c1">FIRST COLOUR</label><select id="c1"><option>Black</option><option>Cream</option><option>Navy blue</option><option>Grey</option></select></div><div><label for="c2">SECOND COLOUR</label><select id="c2"><option>Black</option><option>Cream</option><option>Navy blue</option><option>Grey</option></select></div></div>
 <div class="fields"><div><label for="c3">THIRD COLOUR</label><select id="c3"><option>Black</option><option>Cream</option><option>Navy blue</option><option>Grey</option></select></div><div><label for="notes">ORDER NOTES (OPTIONAL)</label><input id="notes" placeholder="Anything else we should know"></div></div>
 <div id="summary" aria-live="polite"></div>
 <button class="btn" type="button" id="copyOrder">COPY ORDER DETAILS</button>
-<button class="btn secondary" type="button" id="payButton">PAY SECURELY WITH SUMUP</button>
-<p class="small">Online payment is not switched on yet. The adult who manages the SumUp account must add the correct SumUp payment links before customers can pay. Do not treat an order as confirmed until payment and collection details have been checked. After payment is enabled, customers will be asked to send their copied order details to @alientodevidauk so the colours can be matched to the payment.</p></div></section>
+<div class="order-step"><strong>BANK TRANSFER PAYMENT</strong><br>Transfer the order total using the bank details below. Use your order reference as the payment reference. Your order remains <strong>PAYMENT PENDING</strong> until the money has arrived and been checked.
+<div class="fields"><div><label>ACCOUNT HOLDER NAME</label><input value="ADD YOUR EXACT BARCLAYS ACCOUNT NAME IN WEBSITE CODE" readonly></div><div><label>SORT CODE</label><input value="ADD SORT CODE IN WEBSITE CODE" readonly></div></div>
+<div class="fields"><div><label>ACCOUNT NUMBER</label><input value="ADD ACCOUNT NUMBER IN WEBSITE CODE" readonly></div><div><label>PAYMENT REFERENCE</label><input id="orderreference" value="Generated when order is submitted" readonly></div></div></div>
+<button class="btn secondary" type="button" id="payButton">SHOW BANK TRANSFER INSTRUCTIONS</button>
+<p class="small">Customers make the transfer in their own banking app. Only mark an order as paid after checking your Barclays app. Your exact Barclays account holder name must be used; do not display a different trading name as the account holder.</p></div></section>
 <section class="about" id="about"><div class="eyebrow">OUR BRAND</div><h2>ALIENTO DE VIDA</h2><p>ALIENTO DE VIDA means “breath of life”. We are a small student-led business bringing together everyday style, comfort and affordable prices.</p><p>Our first collection features ribbed knitted beanies with a smooth satin lining, available in black, cream, navy blue and grey. Every order helps us grow and fund our next restock. Thank you for supporting our first drop.</p></section>
 <section class="contact" id="contact"><div class="eyebrow">FOLLOW OUR JOURNEY</div><h2>FIND US ON TIKTOK</h2><p>Follow <strong>@alientodevidauk</strong> for beanie videos, stock updates and collection information.</p><a class="btn" href="https://www.tiktok.com/@alientodevidauk" target="_blank" rel="noopener noreferrer">VISIT OUR TIKTOK</a></section>
-</main><footer>ALIENTO DE VIDA © 2026 · EVERYDAY COMFORT. EFFORTLESS STYLE.<br>COLLECTION ONLY · 5 DECEMBER 2026 · LEEDS</footer>
+</main><footer>ALIENTO DE VIDA © 2026 · EVERYDAY COMFORT. EFFORTLESS STYLE.<br>CHOOSE YOUR PREFERRED COLLECTION OPTION WHEN ORDERING</footer>
 <script>
-// The SumUp payment links must be added by the adult account holder before checkout can go live.
-// Paste the matching SumUp Payment Link URL into each empty string below.
-const SUMUP_LINKS = {1:"", 2:"", 3:""};
 const prices = {1:8, 2:12, 3:20};
 const $ = id => document.getElementById(id);
+function collectionLabel(){return $("collection").value === "college" ? "Elliott Hudson College — Wednesday, Room 1.32, 2:20 pm–3:10 pm" : "Merrion Centre, Leeds — Saturday 5 December 2026";}
 function getOrder(){
   const q = Number($("qty").value);
   const colours = [$("c1").value];
   if(q > 1) colours.push($("c2").value);
   if(q > 2) colours.push($("c3").value);
-  return {q, colours, total:prices[q], name:$("customer").value.trim(), contact:$("contactdetails").value.trim(), notes:$("notes").value.trim()};
+  return {q, colours, total:prices[q], collection:collectionLabel(), name:$("customer").value.trim(), contact:$("contactdetails").value.trim(), notes:$("notes").value.trim()};
 }
 function refresh(){
   const o=getOrder();
   $("c2").disabled=o.q<2; $("c3").disabled=o.q<3;
-  $("summary").textContent = `YOUR ORDER SUMMARY\nName: ${o.name || 'Not entered'}\nOffer: ${o.q} ${o.q===1?'beanie':'beanies'}\nColours: ${o.colours.join(', ')}\nCollection: 5 December 2026, Merrion Centre, Leeds\nTotal: £${o.total}\nContact: ${o.contact || 'Not entered'}${o.notes?'\nNotes: '+o.notes:''}`;
+  $("summary").textContent = `YOUR ORDER SUMMARY\nName: ${o.name || 'Not entered'}\nOffer: ${o.q} ${o.q===1?'beanie':'beanies'}\nColours: ${o.colours.join(', ')}\nCollection: ${o.collection}\nTotal: £${o.total}\nContact: ${o.contact || 'Not entered'}${o.notes?'\nNotes: '+o.notes:''}`;
 }
-function orderText(){const o=getOrder();return `ALIENTO DE VIDA ORDER\nName: ${o.name}\nContact: ${o.contact}\nQuantity: ${o.q}\nColours: ${o.colours.join(', ')}\nTotal: £${o.total}\nCollection: 5 December 2026 at Merrion Centre, Leeds\nNotes: ${o.notes || 'None'}`;}
+function orderText(){const o=getOrder();return `ALIENTO DE VIDA ORDER\nName: ${o.name}\nContact: ${o.contact}\nQuantity: ${o.q}\nColours: ${o.colours.join(', ')}\nCollection: ${o.collection}\nTotal: £${o.total}\nPayment reference: ${$('orderreference').value}\nNotes: ${o.notes || 'None'}`;}
 $("copyOrder").addEventListener('click', async ()=>{
   const o=getOrder();
   if(!o.name || !o.contact){alert('Please enter your name and email or phone number first.');return;}
   try{await navigator.clipboard.writeText(orderText());alert('Your order details have been copied. Keep them ready to send to @alientodevidauk.');}
   catch(e){alert(orderText());}
 });
-$("payButton").addEventListener('click', ()=>{
+$("payButton").addEventListener('click', async ()=>{
   const o=getOrder();
   if(!o.name || !o.contact){alert('Please enter your name and email or phone number first.');return;}
-  const link=SUMUP_LINKS[o.q];
-  if(!link || !link.startsWith('https://')){alert('SumUp checkout is not connected yet. The adult who manages the SumUp account needs to add the correct payment links before customers can pay.');return;}
-  window.open(link, '_blank', 'noopener');
+  const ref = 'ALV-' + Date.now().toString().slice(-8);
+  $("orderreference").value = ref;
+  alert(`Please transfer £${o.total} using the bank details shown on this page. Use ${ref} as your payment reference. Your order is pending until payment is checked. Copy your order details and send them to @alientodevidauk.`);
+  try{await navigator.clipboard.writeText(orderText());}catch(e){}
 });
-['customer','contactdetails','qty','c1','c2','c3','notes'].forEach(id=>$(id).addEventListener('input',refresh));
+['customer','contactdetails','qty','collection','c1','c2','c3','notes'].forEach(id=>$(id).addEventListener('input',refresh));
 refresh();
 </script></body></html>
